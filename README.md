@@ -2,15 +2,22 @@
 This repo provides various resources regarding computational aesthetic and artistic image/video generation, including papers, codes, and open-source datasets.
 ## Computational Aesthetic
 ### Papers&Codes
-6. **Draw Your Art Dream: Diverse Digital Art Synthesis with Multimodal Guided Diffusion** [[paper](https://arxiv.org/abs/2209.13360)] [[code](https://github.com/haha-lisa/MGAD-multimodal-guided-artwork-diffusion)]
+12. **Attention-based Multi-Patch Aggregation for Image Aesthetic Assessment** [[paper](http://chongyangma.com/publications/am/2018_am_paper.pdf)] [[code](https://github.com/Openning07/MPADA)]
   
-  Digital art creation is getting more attention in the multimedia community for providing effective engagement of the public with art. Current digital art generation methods usually use single modality inputs as guidance, limiting the expressiveness of the model and the diversity of generated results. To solve this problem, we propose the multimodal guided artwork diffusion (MGAD) model, a diffusion-based digital artwork generation method that utilizes multimodal prompts as guidance to control the classifier-free diffusion model. Additionally, the contrastive language-image pretraining (CLIP) model is used to unify text and image modalities. However, the semantic content of multimodal prompts may conflict with each other, which leads to a collapse in generating progress. Extensive experimental results on the quality and quantity of the generated digital art paintings confirm the effectiveness of the combination of the diffusion model and multimodal guidance.
+  Aggregation structures with explicit information, such as image attributes and scene semantics, are effective and popular for intelligent systems for assessing aesthetics of visual data. However, useful information may not be available due to the high cost of manual annotation and expert design. In this paper, we present a novel multi-patch (MP) aggregation method for image aesthetic assessment. Different from state-of-the-art methods, which augment an MP aggregation network with various visual attributes, we train the model in an end-to-end manner with aesthetic labels only (i.e., aesthetically positive or negative). We achieve the goal by resorting to an attention-based mechanism that adaptively adjusts the weight of each patch during the training process to improve learning efficiency. In addition, we propose a set of objectives with three typical attention mechanisms (i.e., average, minimum, and adaptive) and evaluate their effectiveness on the Aesthetic Visual Analysis (AVA) benchmark. Numerical results show that our approach outperforms existing methods by a large margin. We further verify the effectiveness of the proposed attention-based objectives via ablation studies and shed light on the design of aesthetic assessment systems.
   
   <p align="center">
     <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
   </p>
   
 ### Datasets
+11. **Gourmet Photography Dataset for Aesthetic Assessmentof Food Images** [[paper](https://www.researchgate.net/publication/329329757_Gourmet_photography_dataset_for_aesthetic_assessment_of_food_images)] [[code](https://github.com/Openning07/GPA)]
+  
+  In this study, we present the Gourmet Photography Dataset (GPD),which is the rst large-scale dataset for aesthetic assessment offood photographs. We collect 12,000 food images together withhuman-annotated labels (i.e., aesthetically positive or negative) tobuild this dataset. We evaluate the performance of several popu-lar machine learning algorithms for aesthetic assessment of foodimages to verify the eectiveness and importance of our GPDdataset. Experimental results show that deep convolutional neuralnetworks trained on GPD can achieve comparable performancewith human experts in this task, even on unseen food photographs.Our experiments also provide insights to support further study andapplications related to visual analysis of food images
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
+  </p>
 
 ## Artistic Image Generation
 ### Papers&Codes
@@ -70,6 +77,14 @@ This repo provides various resources regarding computational aesthetic and artis
     <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
   </p>
 
+6. **Draw Your Art Dream: Diverse Digital Art Synthesis with Multimodal Guided Diffusion** [[paper](https://arxiv.org/abs/2209.13360)] [[code](https://github.com/haha-lisa/MGAD-multimodal-guided-artwork-diffusion)]
+  
+  Digital art creation is getting more attention in the multimedia community for providing effective engagement of the public with art. Current digital art generation methods usually use single modality inputs as guidance, limiting the expressiveness of the model and the diversity of generated results. To solve this problem, we propose the multimodal guided artwork diffusion (MGAD) model, a diffusion-based digital artwork generation method that utilizes multimodal prompts as guidance to control the classifier-free diffusion model. Additionally, the contrastive language-image pretraining (CLIP) model is used to unify text and image modalities. However, the semantic content of multimodal prompts may conflict with each other, which leads to a collapse in generating progress. Extensive experimental results on the quality and quantity of the generated digital art paintings confirm the effectiveness of the combination of the diffusion model and multimodal guidance.
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
+  </p>
+
 ### Datasets
 
 ## Artistic Video Generation
@@ -97,10 +112,7 @@ This repo provides various resources regarding computational aesthetic and artis
 
 
 
-
-
-
-11. **** [[paper]()] [[code]()]
+13. **** [[paper]()] [[code]()]
   
   Z-STAR
   
@@ -108,10 +120,347 @@ This repo provides various resources regarding computational aesthetic and artis
     <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
   </p>
 
-12. **** [[paper]()] [[code]()]
+14. **** [[paper]()] [[code]()]
   
   Z-STAR
   
   <p align="center">
     <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
   </p>
+
+15. **** [[paper]()] [[code]()]
+  
+  Z-STAR
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
+  </p>
+
+16. **** [[paper]()] [[code]()]
+  
+  Z-STAR
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
+  </p>
+
+17. **** [[paper]()] [[code]()]
+  
+  Z-STAR
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
+  </p>
+
+18. **** [[paper]()] [[code]()]
+  
+  Z-STAR
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
+  </p>
+
+19. **** [[paper]()] [[code]()]
+  
+  Z-STAR
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
+  </p>
+
+20. **** [[paper]()] [[code]()]
+  
+  Z-STAR
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
+  </p>
+
+21. **** [[paper]()] [[code]()]
+  
+  Z-STAR
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
+  </p>
+
+22. **** [[paper]()] [[code]()]
+  
+  Z-STAR
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
+  </p>
+
+23. **** [[paper]()] [[code]()]
+  
+  Z-STAR
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
+  </p>
+
+24. **** [[paper]()] [[code]()]
+  
+  Z-STAR
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
+  </p>
+
+25. **** [[paper]()] [[code]()]
+  
+  Z-STAR
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
+  </p>
+
+26. **** [[paper]()] [[code]()]
+  
+  Z-STAR
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
+  </p>
+
+27. **** [[paper]()] [[code]()]
+  
+  Z-STAR
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
+  </p>
+
+28. **** [[paper]()] [[code]()]
+  
+  Z-STAR
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
+  </p>
+
+29. **** [[paper]()] [[code]()]
+  
+  Z-STAR
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
+  </p>
+
+30. **** [[paper]()] [[code]()]
+  
+  Z-STAR
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
+  </p>
+
+31. **** [[paper]()] [[code]()]
+  
+  Z-STAR
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
+  </p>
+
+32. **** [[paper]()] [[code]()]
+  
+  Z-STAR
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
+  </p>
+
+33. **** [[paper]()] [[code]()]
+  
+  Z-STAR
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
+  </p>
+
+34. **** [[paper]()] [[code]()]
+  
+  Z-STAR
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
+  </p>
+
+35. **** [[paper]()] [[code]()]
+  
+  Z-STAR
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
+  </p>
+
+36. **** [[paper]()] [[code]()]
+  
+  Z-STAR
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
+  </p>
+
+37. **** [[paper]()] [[code]()]
+  
+  Z-STAR
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
+  </p>
+
+38. **** [[paper]()] [[code]()]
+  
+  Z-STAR
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
+  </p>
+
+39. **** [[paper]()] [[code]()]
+  
+  Z-STAR
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
+  </p>
+
+40. **** [[paper]()] [[code]()]
+  
+  Z-STAR
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
+  </p>
+
+41. **** [[paper]()] [[code]()]
+  
+  Z-STAR
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
+  </p>
+
+42. **** [[paper]()] [[code]()]
+  
+  Z-STAR
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
+  </p>
+
+43. **** [[paper]()] [[code]()]
+  
+  Z-STAR
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
+  </p>
+
+44. **** [[paper]()] [[code]()]
+  
+  Z-STAR
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
+  </p>
+
+45. **** [[paper]()] [[code]()]
+  
+  Z-STAR
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
+  </p>
+
+46. **** [[paper]()] [[code]()]
+  
+  Z-STAR
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
+  </p>
+
+47. **** [[paper]()] [[code]()]
+  
+  Z-STAR
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
+  </p>
+
+48. **** [[paper]()] [[code]()]
+  
+  Z-STAR
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
+  </p>
+
+49. **** [[paper]()] [[code]()]
+  
+  Z-STAR
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
+  </p>
+
+50. **** [[paper]()] [[code]()]
+  
+  Z-STAR
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
+  </p>
+
+51. **** [[paper]()] [[code]()]
+  
+  Z-STAR
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
+  </p>
+
+52. **** [[paper]()] [[code]()]
+  
+  Z-STAR
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
+  </p>
+
+53. **** [[paper]()] [[code]()]
+  
+  Z-STAR
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
+  </p>
+
+54. **** [[paper]()] [[code]()]
+  
+  Z-STAR
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
+  </p>
+
+55. **** [[paper]()] [[code]()]
+  
+  Z-STAR
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
+  </p>
+
+56. **** [[paper]()] [[code]()]
+  
+  Z-STAR
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
+  </p>
+
