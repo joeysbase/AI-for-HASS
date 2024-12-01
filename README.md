@@ -85,8 +85,23 @@ This repo provides various resources regarding computational aesthetic and artis
     <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
   </p>
 
-### Datasets
+13. **SAN: INDUCING METRIZABILITY OF GAN WITH DISCRIMINATIVE NORMALIZED LINEAR LAYER** [[paper](https://arxiv.org/pdf/2301.12811v4)] [[code](https://github.com/sony/san)]
+  
+  Generative adversarial networks (GANs) learn a target probability distribution by optimizing a generator and a discriminator with minimax objectives. This paper addresses the question of whether such optimization actually provides the generator with gradients that make its distribution close to the target distribution. We derive metrizable conditions, sufficient conditions for the discriminator to serve as the distance between the distributions, by connecting the GAN formulation with the concept of sliced optimal transport. Furthermore, by leveraging these theoretical results, we propose a novel GAN training scheme called the Slicing Adversarial Network (SAN). With only simple modifications, a broad class of existing GANs can be converted to SANs. Experiments on synthetic and image datasets support our theoretical results and the effectiveness of SAN as compared to the usual GANs. We also apply SAN to StyleGAN-XL, which leads to a state-of-the-art FID score amongst GANs for class conditional generation on CIFAR10 and ImageNet 256$times$256.
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
+  </p>
 
+### Datasets
+14. **FFHQ** [[paper](https://arxiv.org/pdf/1812.04948v3)] [[code](https://github.com/NVlabs/ffhq-dataset)]
+  
+  A dataset of human faces (Flickr-Faces-HQ, FFHQ) that offers much higher quality and covers considerably wider variation than existing high-resolution dataset
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
+  </p>
+  
 ## Artistic Video Generation
 ### Papers&Codes
 - **Style-A-Video: Agile Diffusion for Arbitrary Text-based Video Style Transfer** [[paper](https://arxiv.org/pdf/2305.05464)] [[code](https://github.com/haha-lisa/Style-A-Video)]
@@ -112,33 +127,35 @@ This repo provides various resources regarding computational aesthetic and artis
 
 
 
-13. **** [[paper]()] [[code]()]
+
+
+
+
+15. **Generative Adversarial Text to Image Synthesis** [[paper](https://arxiv.org/pdf/1605.05396v2)] [[code](https://github.com/reedscot/icml2016)]
   
-  Z-STAR
+  Automatic synthesis of realistic images from text would be interesting and useful, but current AI systems are still far from this goal. However, in recent years generic and powerful recurrent neural network architectures have been developed to learn discriminative text feature representations. Meanwhile, deep convolutional generative adversarial networks (GANs) have begun to generate highly compelling images of specific categories, such as faces, album covers, and room interiors. In this work, we develop a novel deep architecture and GAN formulation to effectively bridge these advances in text and image modeling, translating visual concepts from characters to pixels. We demonstrate the capability of our model to generate plausible images of birds and flowers from detailed text descriptions.
   
   <p align="center">
     <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
   </p>
 
-14. **** [[paper]()] [[code]()]
+16. **High-Resolution Image Synthesis with Latent Diffusion Models** [[paper](https://arxiv.org/pdf/2112.10752v2)] [[code](https://github.com/CompVis/latent-diffusion)]
   
-  Z-STAR
-  
-  <p align="center">
-    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
-  </p>
-
-15. **** [[paper]()] [[code]()]
-  
-  Z-STAR
-  
-  <p align="center">
-    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
-  </p>
-
-16. **** [[paper]()] [[code]()]
-  
-  Z-STAR
+  By decomposing the image formation process into a sequential application of denoising autoencoders, diffusion
+models (DMs) achieve state-of-the-art synthesis results on
+image data and beyond. Additionally, their formulation allows for a guiding mechanism to control the image generation process without retraining. However, since these
+models typically operate directly in pixel space, optimization of powerful DMs often consumes hundreds of GPU
+days and inference is expensive due to sequential evaluations. To enable DM training on limited computational
+resources while retaining their quality and flexibility, we
+apply them in the latent space of powerful pretrained autoencoders. In contrast to previous work, training diffusion
+models on such a representation allows for the first time
+to reach a near-optimal point between complexity reduction and detail preservation, greatly boosting visual fidelity.
+By introducing cross-attention layers into the model architecture, we turn diffusion models into powerful and flexible generators for general conditioning inputs such as text
+or bounding boxes and high-resolution synthesis becomes
+possible in a convolutional manner. Our latent diffusion
+models (LDMs) achieve new state-of-the-art scores for image inpainting and class-conditional image synthesis and
+highly competitive performance on various tasks, including text-to-image synthesis, unconditional image generation
+and super-resolution, while significantly reducing computational requirements compared to pixel-based DMs.
   
   <p align="center">
     <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
