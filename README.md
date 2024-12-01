@@ -93,6 +93,105 @@ This repo provides various resources regarding computational aesthetic and artis
     <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
   </p>
 
+15. **Generative Adversarial Text to Image Synthesis** [[paper](https://arxiv.org/pdf/1605.05396v2)] [[code](https://github.com/reedscot/icml2016)]
+  
+  Automatic synthesis of realistic images from text would be interesting and useful, but current AI systems are still far from this goal. However, in recent years generic and powerful recurrent neural network architectures have been developed to learn discriminative text feature representations. Meanwhile, deep convolutional generative adversarial networks (GANs) have begun to generate highly compelling images of specific categories, such as faces, album covers, and room interiors. In this work, we develop a novel deep architecture and GAN formulation to effectively bridge these advances in text and image modeling, translating visual concepts from characters to pixels. We demonstrate the capability of our model to generate plausible images of birds and flowers from detailed text descriptions.
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
+  </p>
+
+16. **High-Resolution Image Synthesis with Latent Diffusion Models** [[paper](https://arxiv.org/pdf/2112.10752v2)] [[code](https://github.com/CompVis/latent-diffusion)]
+  
+  By decomposing the image formation process into a sequential application of denoising autoencoders, diffusion
+models (DMs) achieve state-of-the-art synthesis results on
+image data and beyond. Additionally, their formulation allows for a guiding mechanism to control the image generation process without retraining. However, since these
+models typically operate directly in pixel space, optimization of powerful DMs often consumes hundreds of GPU
+days and inference is expensive due to sequential evaluations. To enable DM training on limited computational
+resources while retaining their quality and flexibility, we
+apply them in the latent space of powerful pretrained autoencoders. In contrast to previous work, training diffusion
+models on such a representation allows for the first time
+to reach a near-optimal point between complexity reduction and detail preservation, greatly boosting visual fidelity.
+By introducing cross-attention layers into the model architecture, we turn diffusion models into powerful and flexible generators for general conditioning inputs such as text
+or bounding boxes and high-resolution synthesis becomes
+possible in a convolutional manner. Our latent diffusion
+models (LDMs) achieve new state-of-the-art scores for image inpainting and class-conditional image synthesis and
+highly competitive performance on various tasks, including text-to-image synthesis, unconditional image generation
+and super-resolution, while significantly reducing computational requirements compared to pixel-based DMs.
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
+  </p>
+
+17. **Conditional Image Synthesis with Auxiliary Classifier GANs** [[paper](https://arxiv.org/pdf/1610.09585v4)] [[code](https://github.com/dacostaHugo/AC-GANs)]
+  
+  In this paper we introduce new methods for the
+improved training of generative adversarial networks (GANs) for image synthesis. We construct a variant of GANs employing label conditioning that results in 128 × 128 resolution image samples exhibiting global coherence. We
+expand on previous work for image quality assessment to provide two new analyses for assessing the discriminability and diversity of samples
+from class-conditional image synthesis models.
+These analyses demonstrate that high resolution
+samples provide class information not present in
+low resolution samples. Across 1000 ImageNet
+classes, 128 × 128 samples are more than twice
+as discriminable as artificially resized 32 × 32
+samples. In addition, 84.7% of the classes have
+samples exhibiting diversity comparable to real
+ImageNet data.
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
+  </p>
+
+18. **LARGE SCALE GAN TRAINING FOR HIGH FIDELITY NATURAL IMAGE SYNTHESIS** [[paper](https://arxiv.org/pdf/1809.11096v2)] [[code](https://github.com/taki0112/BigGAN-Tensorflow)]
+  
+  Despite recent progress in generative image modeling, successfully generating
+high-resolution, diverse samples from complex datasets such as ImageNet remains
+an elusive goal. To this end, we train Generative Adversarial Networks at the
+largest scale yet attempted, and study the instabilities specific to such scale. We
+find that applying orthogonal regularization to the generator renders it amenable
+to a simple “truncation trick,” allowing fine control over the trade-off between
+sample fidelity and variety by reducing the variance of the Generator’s input. Our
+modifications lead to models which set the new state of the art in class-conditional
+image synthesis. When trained on ImageNet at 128×128 resolution, our models
+(BigGANs) achieve an Inception Score (IS) of 166.5 and Fr ́echet Inception Distance (FID) of 7.4, improving over the previous best IS of 52.52 and FID of 18.65.
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
+  </p>
+
+19. **Semantic Image Synthesis with Spatially-Adaptive Normalization** [[paper](https://arxiv.org/pdf/1903.07291v2)] [[code](https://github.com/NVlabs/SPADE)]
+  
+  We propose spatially-adaptive normalization, a simple
+but effective layer for synthesizing photorealistic images
+given an input semantic layout. Previous methods directly
+feed the semantic layout as input to the deep network, which
+is then processed through stacks of convolution, normalization, and nonlinearity layers. We show that this is suboptimal as the normalization layers tend to “wash away” semantic information. To address the issue, we propose using
+the input layout for modulating the activations in normalization layers through a spatially-adaptive, learned transformation. Experiments on several challenging datasets
+demonstrate the advantage of the proposed method over existing approaches, regarding both visual fidelity and alignment with input layouts. Finally, our model allows user
+control over both semantic and style
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
+  </p>
+
+20. **StackGAN++: Realistic Image Synthesis with Stacked Generative Adversarial Networks** [[paper](https://arxiv.org/pdf/1710.10916v3)] [[code](https://github.com/hanzhanggit/StackGAN)]
+  
+  Although Generative Adversarial Networks (GANs) have shown remarkable success in various tasks, they still face
+challenges in generating high quality images. In this paper, we propose Stacked Generative Adversarial Networks (StackGANs)
+aimed at generating high-resolution photo-realistic images. First, we propose a two-stage generative adversarial network architecture,
+StackGAN-v1, for text-to-image synthesis. The Stage-I GAN sketches the primitive shape and colors of a scene based on a given text
+description, yielding low-resolution images. The Stage-II GAN takes Stage-I results and the text description as inputs, and generates
+high-resolution images with photo-realistic details. Second, an advanced multi-stage generative adversarial network architecture,
+StackGAN-v2, is proposed for both conditional and unconditional generative tasks. Our StackGAN-v2 consists of multiple generators
+and multiple discriminators arranged in a tree-like structure; images at multiple scales corresponding to the same scene are generated
+from different branches of the tree. StackGAN-v2 shows more stable training behavior than StackGAN-v1 by jointly approximating
+multiple distributions. Extensive experiments demonstrate that the proposed stacked generative adversarial networks significantly
+outperform other state-of-the-art methods in generating photo-realistic images.
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
+  </p>
+
 ### Datasets
 14. **FFHQ** [[paper](https://arxiv.org/pdf/1812.04948v3)] [[code](https://github.com/NVlabs/ffhq-dataset)]
   
@@ -131,67 +230,7 @@ This repo provides various resources regarding computational aesthetic and artis
 
 
 
-15. **Generative Adversarial Text to Image Synthesis** [[paper](https://arxiv.org/pdf/1605.05396v2)] [[code](https://github.com/reedscot/icml2016)]
-  
-  Automatic synthesis of realistic images from text would be interesting and useful, but current AI systems are still far from this goal. However, in recent years generic and powerful recurrent neural network architectures have been developed to learn discriminative text feature representations. Meanwhile, deep convolutional generative adversarial networks (GANs) have begun to generate highly compelling images of specific categories, such as faces, album covers, and room interiors. In this work, we develop a novel deep architecture and GAN formulation to effectively bridge these advances in text and image modeling, translating visual concepts from characters to pixels. We demonstrate the capability of our model to generate plausible images of birds and flowers from detailed text descriptions.
-  
-  <p align="center">
-    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
-  </p>
 
-16. **High-Resolution Image Synthesis with Latent Diffusion Models** [[paper](https://arxiv.org/pdf/2112.10752v2)] [[code](https://github.com/CompVis/latent-diffusion)]
-  
-  By decomposing the image formation process into a sequential application of denoising autoencoders, diffusion
-models (DMs) achieve state-of-the-art synthesis results on
-image data and beyond. Additionally, their formulation allows for a guiding mechanism to control the image generation process without retraining. However, since these
-models typically operate directly in pixel space, optimization of powerful DMs often consumes hundreds of GPU
-days and inference is expensive due to sequential evaluations. To enable DM training on limited computational
-resources while retaining their quality and flexibility, we
-apply them in the latent space of powerful pretrained autoencoders. In contrast to previous work, training diffusion
-models on such a representation allows for the first time
-to reach a near-optimal point between complexity reduction and detail preservation, greatly boosting visual fidelity.
-By introducing cross-attention layers into the model architecture, we turn diffusion models into powerful and flexible generators for general conditioning inputs such as text
-or bounding boxes and high-resolution synthesis becomes
-possible in a convolutional manner. Our latent diffusion
-models (LDMs) achieve new state-of-the-art scores for image inpainting and class-conditional image synthesis and
-highly competitive performance on various tasks, including text-to-image synthesis, unconditional image generation
-and super-resolution, while significantly reducing computational requirements compared to pixel-based DMs.
-  
-  <p align="center">
-    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
-  </p>
-
-17. **** [[paper]()] [[code]()]
-  
-  Z-STAR
-  
-  <p align="center">
-    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
-  </p>
-
-18. **** [[paper]()] [[code]()]
-  
-  Z-STAR
-  
-  <p align="center">
-    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
-  </p>
-
-19. **** [[paper]()] [[code]()]
-  
-  Z-STAR
-  
-  <p align="center">
-    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
-  </p>
-
-20. **** [[paper]()] [[code]()]
-  
-  Z-STAR
-  
-  <p align="center">
-    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
-  </p>
 
 21. **** [[paper]()] [[code]()]
   
