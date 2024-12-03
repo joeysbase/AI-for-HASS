@@ -17,6 +17,72 @@ This repo provides various resources regarding computational aesthetic and artis
   <p align="center">
     <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
   </p>
+
+36. **NIMA: Neural Image Assessment** [[paper](https://arxiv.org/pdf/1709.05424v2)] [[code](https://github.com/idealo/image-quality-assessment)]
+  
+  Automatically learned quality assessment for images has recently become a hot topic due to its usefulness in a wide variety of applications such as evaluating image capture pipelines, storage techniques and sharing media. Despite the subjective nature of this problem, most existing methods only predict the mean opinion score provided by datasets such as AVA [1] and TID2013 [2]. Our approach differs from others in that we predict the distribution of human opinion scores using a convolutional neural network. Our architecture also has the advantage of being significantly simpler than other methods with comparable performance. Our proposed approach relies on the success (and retraining) of proven, state-of-the-art deep object recognition networks. Our resulting network can be used to not only score images reliably and with high correlation to human perception, but also to assist with adaptation and optimization of photo editing/enhancement algorithms in a photographic pipeline. All this is done without need for a "golden" reference image, consequently allowing for single-image, semantic- and perceptually-aware, no-reference quality assessment.
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
+  </p>
+
+37. **Composition-Preserving Deep Photo Aesthetics Assessment** [[paper](https://openaccess.thecvf.com/content_cvpr_2016/papers/Mai_Composition-Preserving_Deep_Photo_CVPR_2016_paper.pdf)] [[code](https://github.com/gautamMalu/Aesthetic_attributes_maps)]
+  
+  Photo aesthetics assessment is challenging. Deep convolutional neural network (ConvNet) methods have recently shown promising results for aesthetics assessment. The performance of these deep ConvNet methods, however, is often compromised by the constraint that the neural network only takes the fixed-size input. To accommodate this requirement, input images need to be transformed via cropping, scaling, or padding, which often damages image composition, reduces image resolution, or causes image distortion, thus compromising the aesthetics of the original images. In this paper, we present a composition-preserving deep ConvNet method that directly learns aesthetics features from the original input images without any image transformations. Specifically, our method adds an adaptive spatial pooling layer upon the regular convolution and pooling layers to directly handle input images with original sizes and aspect ratios. To allow for multi-scale feature extraction, we develop the Multi-Net Adaptive Spatial Pooling ConvNet architecture which consists of multiple sub-networks with different adaptive spatial pooling sizes and leverage a scene-based aggregation layer to effectively combine the predictions from multiple sub-networks. Our experiments on the large-scale aesthetics assessment benchmark (AVA) demonstrate that our method can significantly improve the state-of-the-art results in photo aesthetics assessment.
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
+  </p>
+
+38. **Photo Aesthetics Ranking Network with Attributes and Content Adaptation** [[paper](https://arxiv.org/pdf/1606.01621v2)] [[code](https://github.com/aimerykong/deepImageAestheticsAnalysis)]
+  
+  Real-world applications could benefit from the ability to automatically generate a fine-grained ranking of photo aesthetics. However, previous methods for image aesthetics analysis have primarily focused on the coarse, binary categorization of images into high- or low-aesthetic categories. In this work, we propose to learn a deep convolutional neural network to rank photo aesthetics in which the relative ranking of photo aesthetics are directly modeled in the loss function. Our model incorporates joint learning of meaningful photographic attributes and image content information which can help regularize the complicated photo aesthetics rating problem. To train and analyze this model, we have assembled a new aesthetics and attributes database (AADB) which contains aesthetic scores and meaningful attributes assigned to each image by multiple human raters. Anonymized rater identities are recorded across images allowing us to exploit intra-rater consistency using a novel sampling strategy when computing the ranking loss of training image pairs. We show the proposed sampling strategy is very effective and robust in face of subjective judgement of image aesthetics by individuals with different aesthetic tastes. Experiments demonstrate that our unified model can generate aesthetic rankings that are more consistent with human ratings. To further validate our model, we show that by simply thresholding the estimated aesthetic scores, we are able to achieve state-or-the-art classification performance on the existing AVA dataset benchmark.
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
+  </p>
+
+39. **ILGNet: Inception Modules with Connected Local and Global Features for Efficient Image Aesthetic Quality Classification using Domain Adaptation** [[paper](https://arxiv.org/pdf/1610.02256v3)] [[code](https://github.com/BestiVictory/ILGnet)]
+  
+  In this paper, we address a challenging problem of aesthetic image classification, which is to label an input image as high or low aesthetic quality. We take both the local and global features of images into consideration. A novel deep convolutional neural network named ILGNet is proposed, which combines both the Inception modules and an connected layer of both Local and Global features. The ILGnet is based on GoogLeNet. Thus, it is easy to use a pre-trained GoogLeNet for large-scale image classification problem and fine tune our connected layers on an large scale database of aesthetic related images: AVA, i.e. \emph{domain adaptation}. The experiments reveal that our model achieves the state of the arts in AVA database. Both the training and testing speeds of our model are higher than those of the original GoogLeNet.
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
+  </p>
+
+40. **Effective Aesthetics Prediction with Multi-level Spatially Pooled Features** [[paper](https://arxiv.org/pdf/1904.01382v1)] [[code](https://github.com/subpic/ava-mlsp)]
+  
+ We propose an effective deep learning approach to aesthetics quality assessment that relies on a new type of pre-trained features, and apply it to the AVA data set, the currently largest aesthetics database. While previous approaches miss some of the information in the original images, due to taking small crops, down-scaling or warping the originals during training, we propose the first method that efficiently supports full resolution images as an input, and can be trained on variable input sizes. This allows us to significantly improve upon the state of the art, increasing the Spearman rank-order correlation coefficient (SRCC) of ground-truth mean opinion scores (MOS) from the existing best reported of 0.612 to 0.756. To achieve this performance, we extract multi-level spatially pooled (MLSP) features from all convolutional blocks of a pre-trained InceptionResNet-v2 network, and train a custom shallow Convolutional Neural Network (CNN) architecture on these new features.
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
+  </p>
+
+41. **Personalized Image Aesthetics Assessment via Meta-Learning With Bilevel Gradient Optimization** [[paper](https://ieeexplore.ieee.org/abstract/document/9115059)] [[code](https://github.com/zhuhancheng/BLG-PIAA)]
+  
+  Typical image aesthetics assessment (IAA) is modeled for the generic aesthetics perceived by an ``average'' user. However, such generic aesthetics models neglect the fact that users' aesthetic preferences vary significantly depending on their unique preferences. Therefore, it is essential to tackle the issue for personalized IAA (PIAA). Since PIAA is a typical small sample learning (SSL) problem, existing PIAA models are usually built by fine-tuning the well-established generic IAA (GIAA) models, which are regarded as prior knowledge. Nevertheless, this kind of prior knowledge based on ``average aesthetics'' fails to incarnate the aesthetic diversity of different people. In order to learn the shared prior knowledge when different people judge aesthetics, that is, learn how people judge image aesthetics, we propose a PIAA method based on meta-learning with bilevel gradient optimization (BLG-PIAA), which is trained using individual aesthetic data directly and generalizes to unknown users quickly. The proposed approach consists of two phases: 1) meta-training and 2) meta-testing. In meta-training, the aesthetics assessment of each user is regarded as a task, and the training set of each task is divided into two sets: 1) support set and 2) query set. Unlike traditional methods that train a GIAA model based on average aesthetics, we train an aesthetic meta-learner model by bilevel gradient updating from the support set to the query set using many users' PIAA tasks. In meta-testing, the aesthetic meta-learner model is fine-tuned using a small amount of aesthetic data of a target user to obtain the PIAA model. The experimental results show that the proposed method outperforms the state-of-the-art PIAA metrics, and the learned prior model of BLG-PIAA can be quickly adapted to unseen PIAA tasks.
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
+  </p>
+
+42. **Q-Align: Teaching LMMs for Visual Scoring via Discrete Text-Defined Levels** [[paper](https://arxiv.org/pdf/2312.17090v1)] [[code](https://github.com/q-future/q-align)]
+  
+  The explosion of visual content available online underscores the requirement for an accurate machine assessor to robustly evaluate scores across diverse types of visual contents. While recent studies have demonstrated the exceptional potentials of large multi-modality models (LMMs) on a wide range of related fields, in this work, we explore how to teach them for visual rating aligned with human opinions. Observing that human raters only learn and judge discrete text-defined levels in subjective studies, we propose to emulate this subjective process and teach LMMs with text-defined rating levels instead of scores. The proposed Q-Align achieves state-of-the-art performance on image quality assessment (IQA), image aesthetic assessment (IAA), as well as video quality assessment (VQA) tasks under the original LMM structure. With the syllabus, we further unify the three tasks into one model, termed the OneAlign. In our experiments, we demonstrate the advantage of the discrete-level-based syllabus over direct-score-based variants for LMMs. 
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
+  </p>
+
+
+
+44. **Image Composition Assessment with Saliency-augmented Multi-pattern Pooling** [[paper](https://arxiv.org/pdf/2104.03133v2)] [[code](https://github.com/bcmi/Image-Composition-Assessment-Dataset-CADB)]
+  
+  Image composition assessment is crucial in aesthetic assessment, which aims to assess the overall composition quality of a given image. However, to the best of our knowledge, there is neither dataset nor method specifically proposed for this task. In this paper, we contribute the first composition assessment dataset CADB with composition scores for each image provided by multiple professional raters. Besides, we propose a composition assessment network SAMP-Net with a novel Saliency-Augmented Multi-pattern Pooling (SAMP) module, which analyses visual layout from the perspectives of multiple composition patterns. We also leverage composition-relevant attributes to further boost the performance, and extend Earth Mover's Distance (EMD) loss to weighted EMD loss to eliminate the content bias. The experimental results show that our SAMP-Net can perform more favorably than previous aesthetic assessment approaches.
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
+  </p>
   
 ### Datasets
 - **Gourmet Photography Dataset for Aesthetic Assessmentof Food Images** [[paper](https://www.researchgate.net/publication/329329757_Gourmet_photography_dataset_for_aesthetic_assessment_of_food_images)] [[code](https://github.com/Openning07/GPA)]
@@ -27,6 +93,22 @@ This repo provides various resources regarding computational aesthetic and artis
     <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
   </p>
 
+43. **Understanding Aesthetics with Language: A Photo Critique Dataset for Aesthetic Assessment** [[paper](https://arxiv.org/pdf/2206.08614v3)] [[code](https://github.com/mediatechnologycenter/aestheval)]
+  
+  Computational inference of aesthetics is an ill-defined task due to its subjective nature. Many datasets have been proposed to tackle the problem by providing pairs of images and aesthetic scores based on human ratings. However, humans are better at expressing their opinion, taste, and emotions by means of language rather than summarizing them in a single number. In fact, photo critiques provide much richer information as they reveal how and why users rate the aesthetics of visual stimuli. In this regard, we propose the Reddit Photo Critique Dataset (RPCD), which contains tuples of image and photo critiques. RPCD consists of 74K images and 220K comments and is collected from a Reddit community used by hobbyists and professional photographers to improve their photography skills by leveraging constructive community feedback. The proposed dataset differs from previous aesthetics datasets mainly in three aspects, namely (i) the large scale of the dataset and the extension of the comments criticizing different aspects of the image, (ii) it contains mostly UltraHD images, and (iii) it can easily be extended to new data as it is collected through an automatic pipeline. To the best of our knowledge, in this work, we propose the first attempt to estimate the aesthetic quality of visual stimuli from the critiques. To this end, we exploit the polarity of the sentiment of criticism as an indicator of aesthetic judgment. We demonstrate how sentiment polarity correlates positively with the aesthetic judgment available for two aesthetic assessment benchmarks. Finally, we experiment with several models by using the sentiment scores as a target for ranking images.
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
+  </p>
+
+45. **** [[paper](https://arxiv.org/pdf/2206.02338v2)] [[code](https://github.com/xk-huang/OrdinalCLIP)]
+  
+  This paper presents a language-powered paradigm for ordinal regression. Existing methods usually treat each rank as a category and employ a set of weights to learn these concepts. These methods are easy to overfit and usually attain unsatisfactory performance as the learned concepts are mainly derived from the training set. Recent large pre-trained vision-language models like CLIP have shown impressive performance on various visual tasks. In this paper, we propose to learn the rank concepts from the rich semantic CLIP latent space. Specifically, we reformulate this task as an image-language matching problem with a contrastive objective, which regards labels as text and obtains a language prototype from a text encoder for each rank. While prompt engineering for CLIP is extremely time-consuming, we propose OrdinalCLIP, a differentiable prompting method for adapting CLIP for ordinal regression. OrdinalCLIP consists of learnable context tokens and learnable rank embeddings; The learnable rank embeddings are constructed by explicitly modeling numerical continuity, resulting in well-ordered, compact language prototypes in the CLIP space. Once learned, we can only save the language prototypes and discard the huge language model, resulting in zero additional computational overhead compared with the linear head counterpart. Experimental results show that our paradigm achieves competitive performance in general ordinal regression tasks, and gains improvements in few-shot and distribution shift settings for age estimation. The code is available at https://github.com/xk-huang/OrdinalCLIP.
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
+  </p>
+  
 ## Artistic Image Generation
 ### Papers&Codes
 - **$Z^*$ : Zero-shot Style Transfer via Attention Rearrangement** [[paper](https://arxiv.org/abs/2311.16491)] [[code](https://github.com/HolmesShuan/Zero-shot-Style-Transfer-via-Attention-Rearrangement)]
@@ -200,6 +282,30 @@ outperform other state-of-the-art methods in generating photo-realistic images.
     <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
   </p>
 
+46. **Instance Normalization: The Missing Ingredient for Fast Stylization** [[paper](https://arxiv.org/pdf/1607.08022v3)] [[code](https://github.com/DmitryUlyanov/texture_nets)]
+  
+  It this paper we revisit the fast stylization method introduced in Ulyanov et. al. (2016). We show how a small change in the stylization architecture results in a significant qualitative improvement in the generated images. The change is limited to swapping batch normalization with instance normalization, and to apply the latter both at training and testing times. The resulting method can be used to train high-performance architectures for real-time image generation.
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
+  </p>
+
+47. **A Closed-form Solution to Photorealistic Image Stylization** [[paper](https://arxiv.org/pdf/1802.06474v5)] [[code](https://github.com/NVIDIA/FastPhotoStyle)]
+  
+  Photorealistic image stylization concerns transferring style of a reference photo to a content photo with the constraint that the stylized photo should remain photorealistic. While several photorealistic image stylization methods exist, they tend to generate spatially inconsistent stylizations with noticeable artifacts. In this paper, we propose a method to address these issues. The proposed method consists of a stylization step and a smoothing step. While the stylization step transfers the style of the reference photo to the content photo, the smoothing step ensures spatially consistent stylizations. Each of the steps has a closed-form solution and can be computed efficiently. We conduct extensive experimental validations. The results show that the proposed method generates photorealistic stylization outputs that are more preferred by human subjects as compared to those by the competing methods while running much faster.
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
+  </p>
+
+48. **A Style-Aware Content Loss for Real-time HD Style Transfer** [[paper](https://arxiv.org/pdf/1807.10201v2)] [[code](https://github.com/CompVis/adaptive-style-transfer)]
+  
+  Recently, style transfer has received a lot of attention. While much of this research has aimed at speeding up processing, the approaches are still lacking from a principled, art historical standpoint: a style is more than just a single image or an artist, but previous work is limited to only a single instance of a style or shows no benefit from more images. Moreover, previous work has relied on a direct comparison of art in the domain of RGB images or on CNNs pre-trained on ImageNet, which requires millions of labeled object bounding boxes and can introduce an extra bias, since it has been assembled without artistic consideration. To circumvent these issues, we propose a style-aware content loss, which is trained jointly with a deep encoder-decoder network for real-time, high-resolution stylization of images and videos. We propose a quantitative measure for evaluating the quality of a stylized image and also have art historians rank patches from our approach against those from previous work. These and our qualitative results ranging from small image patches to megapixel stylistic images and videos show that our approach better captures the subtle nature in which a style affects content.
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
+  </p>
+
 ### Datasets
 - **FFHQ** [[paper](https://arxiv.org/pdf/1812.04948v3)] [[code](https://github.com/NVlabs/ffhq-dataset)]
   
@@ -302,6 +408,46 @@ outperform other state-of-the-art methods in generating photo-realistic images.
     <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
   </p>
 
+31. **FateZero: Fusing Attentions for Zero-shot Text-based Video Editing** [[paper](https://arxiv.org/pdf/2303.09535v3)] [[code](https://github.com/chenyangqiqi/fatezero)]
+  
+  The diffusion-based generative models have achieved remarkable success in text-based image generation. However, since it contains enormous randomness in generation progress, it is still challenging to apply such models for real-world visual content editing, especially in videos. In this paper, we propose FateZero, a zero-shot text-based editing method on real-world videos without per-prompt training or use-specific mask. To edit videos consistently, we propose several techniques based on the pre-trained models. Firstly, in contrast to the straightforward DDIM inversion technique, our approach captures intermediate attention maps during inversion, which effectively retain both structural and motion information. These maps are directly fused in the editing process rather than generated during denoising. To further minimize semantic leakage of the source video, we then fuse self-attentions with a blending mask obtained by cross-attention features from the source prompt. Furthermore, we have implemented a reform of the self-attention mechanism in denoising UNet by introducing spatial-temporal attention to ensure frame consistency. Yet succinct, our method is the first one to show the ability of zero-shot text-driven video style and local attribute editing from the trained text-to-image model. We also have a better zero-shot shape-aware editing ability based on the text-to-video model. Extensive experiments demonstrate our superior temporal consistency and editing capability than previous works.
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
+  </p>
+
+32. **VToonify: Controllable High-Resolution Portrait Video Style Transfer** [[paper](https://arxiv.org/pdf/2209.11224v3)] [[code](https://github.com/williamyang1991/vtoonify)]
+  
+  Generating high-quality artistic portrait videos is an important and desirable task in computer graphics and vision. Although a series of successful portrait image toonification models built upon the powerful StyleGAN have been proposed, these image-oriented methods have obvious limitations when applied to videos, such as the fixed frame size, the requirement of face alignment, missing non-facial details and temporal inconsistency. In this work, we investigate the challenging controllable high-resolution portrait video style transfer by introducing a novel VToonify framework. Specifically, VToonify leverages the mid- and high-resolution layers of StyleGAN to render high-quality artistic portraits based on the multi-scale content features extracted by an encoder to better preserve the frame details. The resulting fully convolutional architecture accepts non-aligned faces in videos of variable size as input, contributing to complete face regions with natural motions in the output. Our framework is compatible with existing StyleGAN-based image toonification models to extend them to video toonification, and inherits appealing features of these models for flexible style control on color and intensity. This work presents two instantiations of VToonify built upon Toonify and DualStyleGAN for collection-based and exemplar-based portrait video style transfer, respectively. Extensive experimental results demonstrate the effectiveness of our proposed VToonify framework over existing methods in generating high-quality and temporally-coherent artistic portrait videos with flexible style controls.
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
+  </p>
+
+33. **Two Birds, One Stone: A Unified Framework for Joint Learning of Image and Video Style Transfers** [[paper](https://arxiv.org/pdf/2304.11335v1)] [[code](https://github.com/NevSNev/UniST)]
+  
+  Current arbitrary style transfer models are limited to either image or video domains. In order to achieve satisfying image and video style transfers, two different models are inevitably required with separate training processes on image and video domains, respectively. In this paper, we show that this can be precluded by introducing UniST, a Unified Style Transfer framework for both images and videos. At the core of UniST is a domain interaction transformer (DIT), which first explores context information within the specific domain and then interacts contextualized domain information for joint learning. In particular, DIT enables exploration of temporal information from videos for the image style transfer task and meanwhile allows rich appearance texture from images for video style transfer, thus leading to mutual benefits. Considering heavy computation of traditional multi-head self-attention, we present a simple yet effective axial multi-head self-attention (AMSA) for DIT, which improves computational efficiency while maintains style transfer performance. To verify the effectiveness of UniST, we conduct extensive experiments on both image and video style transfer tasks and show that UniST performs favorably against state-of-the-art approaches on both tasks. Our code and results will be released.
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
+  </p>
+
+34. **Style-A-Video: Agile Diffusion for Arbitrary Text-based Video Style Transfer** [[paper](https://arxiv.org/pdf/2305.05464v1)] [[code](https://github.com/haha-lisa/style-a-video)]
+  
+  Large-scale text-to-video diffusion models have demonstrated an exceptional ability to synthesize diverse videos. However, due to the lack of extensive text-to-video datasets and the necessary computational resources for training, directly applying these models for video stylization remains difficult. Also, given that the noise addition process on the input content is random and destructive, fulfilling the style transfer task's content preservation criteria is challenging. This paper proposes a zero-shot video stylization method named Style-A-Video, which utilizes a generative pre-trained transformer with an image latent diffusion model to achieve a concise text-controlled video stylization. We improve the guidance condition in the denoising process, establishing a balance between artistic expression and structure preservation. Furthermore, to decrease inter-frame flicker and avoid the formation of additional artifacts, we employ a sampling optimization and a temporal consistency module. Extensive experiments show that we can attain superior content preservation and stylistic performance while incurring less consumption than previous solutions. 
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
+  </p>
+
+35. **Control-A-Video: Controllable Text-to-Video Diffusion Models with Motion Prior and Reward Feedback Learning** [[paper](https://arxiv.org/pdf/2305.13840v3)] [[code](https://github.com/weifeng-chen/control-a-video)]
+  
+  Recent advances in text-to-image (T2I) diffusion models have enabled impressive image generation capabilities guided by text prompts. However, extending these techniques to video generation remains challenging, with existing text-to-video (T2V) methods often struggling to produce high-quality and motion-consistent videos. In this work, we introduce Control-A-Video, a controllable T2V diffusion model that can generate videos conditioned on text prompts and reference control maps like edge and depth maps. To tackle video quality and motion consistency issues, we propose novel strategies to incorporate content prior and motion prior into the diffusion-based generation process. Specifically, we employ a first-frame condition scheme to transfer video generation from the image domain. Additionally, we introduce residual-based and optical flow-based noise initialization to infuse motion priors from reference videos, promoting relevance among frame latents for reduced flickering. Furthermore, we present a Spatio-Temporal Reward Feedback Learning (ST-ReFL) algorithm that optimizes the video diffusion model using multiple reward models for video quality and motion consistency, leading to superior outputs. Comprehensive experiments demonstrate that our framework generates higher-quality, more consistent videos compared to existing state-of-the-art methods in controllable text-to-video generation
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
+  </p>
+
 ### Datasets
 - **ChronoMagic-Bench: A Benchmark for Metamorphic Evaluation of Text-to-Time-lapse Video Generation** [[paper](https://arxiv.org/pdf/2406.18522v2)] [[code](https://github.com/pku-yuangroup/chronomagic-bench)]
   
@@ -319,149 +465,6 @@ outperform other state-of-the-art methods in generating photo-realistic images.
 
 
 
-31. **** [[paper]()] [[code]()]
-  
-  Z-STAR
-  
-  <p align="center">
-    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
-  </p>
-
-32. **** [[paper]()] [[code]()]
-  
-  Z-STAR
-  
-  <p align="center">
-    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
-  </p>
-
-33. **** [[paper]()] [[code]()]
-  
-  Z-STAR
-  
-  <p align="center">
-    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
-  </p>
-
-34. **** [[paper]()] [[code]()]
-  
-  Z-STAR
-  
-  <p align="center">
-    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
-  </p>
-
-35. **** [[paper]()] [[code]()]
-  
-  Z-STAR
-  
-  <p align="center">
-    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
-  </p>
-
-36. **** [[paper]()] [[code]()]
-  
-  Z-STAR
-  
-  <p align="center">
-    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
-  </p>
-
-37. **** [[paper]()] [[code]()]
-  
-  Z-STAR
-  
-  <p align="center">
-    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
-  </p>
-
-38. **** [[paper]()] [[code]()]
-  
-  Z-STAR
-  
-  <p align="center">
-    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
-  </p>
-
-39. **** [[paper]()] [[code]()]
-  
-  Z-STAR
-  
-  <p align="center">
-    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
-  </p>
-
-40. **** [[paper]()] [[code]()]
-  
-  Z-STAR
-  
-  <p align="center">
-    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
-  </p>
-
-41. **** [[paper]()] [[code]()]
-  
-  Z-STAR
-  
-  <p align="center">
-    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
-  </p>
-
-42. **** [[paper]()] [[code]()]
-  
-  Z-STAR
-  
-  <p align="center">
-    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
-  </p>
-
-43. **** [[paper]()] [[code]()]
-  
-  Z-STAR
-  
-  <p align="center">
-    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
-  </p>
-
-44. **** [[paper]()] [[code]()]
-  
-  Z-STAR
-  
-  <p align="center">
-    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
-  </p>
-
-45. **** [[paper]()] [[code]()]
-  
-  Z-STAR
-  
-  <p align="center">
-    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
-  </p>
-
-46. **** [[paper]()] [[code]()]
-  
-  Z-STAR
-  
-  <p align="center">
-    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
-  </p>
-
-47. **** [[paper]()] [[code]()]
-  
-  Z-STAR
-  
-  <p align="center">
-    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
-  </p>
-
-48. **** [[paper]()] [[code]()]
-  
-  Z-STAR
-  
-  <p align="center">
-    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
-  </p>
 
 49. **** [[paper]()] [[code]()]
   
