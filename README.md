@@ -85,7 +85,7 @@ This repo provides various resources regarding computational aesthetic and artis
   </p>
   
 ### Datasets
-- **Gourmet Photography Dataset for Aesthetic Assessmentof Food Images** [[paper](https://www.researchgate.net/publication/329329757_Gourmet_photography_dataset_for_aesthetic_assessment_of_food_images)] [[code](https://github.com/Openning07/GPA)]
+- **GPD** [[paper](https://www.researchgate.net/publication/329329757_Gourmet_photography_dataset_for_aesthetic_assessment_of_food_images)] [[code](https://github.com/Openning07/GPA)]
   
   In this study, we present the Gourmet Photography Dataset (GPD),which is the rst large-scale dataset for aesthetic assessment offood photographs. We collect 12,000 food images together withhuman-annotated labels (i.e., aesthetically positive or negative) tobuild this dataset. We evaluate the performance of several popu-lar machine learning algorithms for aesthetic assessment of foodimages to verify the eectiveness and importance of our GPDdataset. Experimental results show that deep convolutional neuralnetworks trained on GPD can achieve comparable performancewith human experts in this task, even on unseen food photographs.Our experiments also provide insights to support further study andapplications related to visual analysis of food images
   
@@ -93,7 +93,7 @@ This repo provides various resources regarding computational aesthetic and artis
     <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
   </p>
 
-43. **Understanding Aesthetics with Language: A Photo Critique Dataset for Aesthetic Assessment** [[paper](https://arxiv.org/pdf/2206.08614v3)] [[code](https://github.com/mediatechnologycenter/aestheval)]
+43. **RPCD** [[paper](https://arxiv.org/pdf/2206.08614v3)] [[code](https://github.com/mediatechnologycenter/aestheval)]
   
   Computational inference of aesthetics is an ill-defined task due to its subjective nature. Many datasets have been proposed to tackle the problem by providing pairs of images and aesthetic scores based on human ratings. However, humans are better at expressing their opinion, taste, and emotions by means of language rather than summarizing them in a single number. In fact, photo critiques provide much richer information as they reveal how and why users rate the aesthetics of visual stimuli. In this regard, we propose the Reddit Photo Critique Dataset (RPCD), which contains tuples of image and photo critiques. RPCD consists of 74K images and 220K comments and is collected from a Reddit community used by hobbyists and professional photographers to improve their photography skills by leveraging constructive community feedback. The proposed dataset differs from previous aesthetics datasets mainly in three aspects, namely (i) the large scale of the dataset and the extension of the comments criticizing different aspects of the image, (ii) it contains mostly UltraHD images, and (iii) it can easily be extended to new data as it is collected through an automatic pipeline. To the best of our knowledge, in this work, we propose the first attempt to estimate the aesthetic quality of visual stimuli from the critiques. To this end, we exploit the polarity of the sentiment of criticism as an indicator of aesthetic judgment. We demonstrate how sentiment polarity correlates positively with the aesthetic judgment available for two aesthetic assessment benchmarks. Finally, we experiment with several models by using the sentiment scores as a target for ranking images.
   
@@ -315,6 +315,30 @@ outperform other state-of-the-art methods in generating photo-realistic images.
     <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
   </p>
   
+49. **CelebA** [[paper](https://arxiv.org/pdf/1710.10196v3)] [[code](https://github.com/tkarras/progressive_growing_of_gans)]
+  
+  We describe a new training methodology for generative adversarial networks. The key idea is to grow both the generator and discriminator progressively: starting from a low resolution, we add new layers that model increasingly fine details as training progresses. This both speeds the training up and greatly stabilizes it, allowing us to produce images of unprecedented quality, e.g., CelebA images at 1024^2. We also propose a simple way to increase the variation in generated images, and achieve a record inception score of 8.80 in unsupervised CIFAR10. Additionally, we describe several implementation details that are important for discouraging unhealthy competition between the generator and discriminator. Finally, we suggest a new metric for evaluating GAN results, both in terms of image quality and variation. As an additional contribution, we construct a higher-quality version of the CelebA dataset.
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
+  </p>
+
+50. **CelebA-HQ** [[paper](https://arxiv.org/pdf/1912.01865v2)] [[code](https://github.com/clovaai/stargan-v2)]
+  
+  A good image-to-image translation model should learn a mapping between different visual domains while satisfying the following properties: 1) diversity of generated images and 2) scalability over multiple domains. Existing methods address either of the issues, having limited diversity or multiple models for all domains. We propose StarGAN v2, a single framework that tackles both and shows significantly improved results over the baselines. Experiments on CelebA-HQ and a new animal faces dataset (AFHQ) validate our superiority in terms of visual quality, diversity, and scalability. To better assess image-to-image translation models, we release AFHQ, high-quality animal faces with large inter- and intra-domain differences. The code, pretrained models, and dataset can be found at https://github.com/clovaai/stargan-v2.
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
+  </p>
+
+
+52. **Fashion-MNIST** [[paper](https://arxiv.org/pdf/1708.07747v2)] [[code](https://github.com/zalandoresearch/fashion-mnist)]
+  
+  We present Fashion-MNIST, a new dataset comprising of 28x28 grayscale images of 70,000 fashion products from 10 categories, with 7,000 images per category. The training set has 60,000 images and the test set has 10,000 images. Fashion-MNIST is intended to serve as a direct drop-in replacement for the original MNIST dataset for benchmarking machine learning algorithms, as it shares the same image size, data format and the structure of training and testing splits. The dataset is freely available at https://github.com/zalandoresearch/fashion-mnist
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
+  </p>
 ## Artistic Video Generation
 ### Papers&Codes
 - **Style-A-Video: Agile Diffusion for Arbitrary Text-based Video Style Transfer** [[paper](https://arxiv.org/pdf/2305.05464)] [[code](https://github.com/haha-lisa/Style-A-Video)]
@@ -458,62 +482,39 @@ outperform other state-of-the-art methods in generating photo-realistic images.
   </p>
 
 
-
-
-
-
-
-
-
-
-49. **** [[paper]()] [[code]()]
+53. **UCF101** [[paper](https://arxiv.org/pdf/1212.0402v1)] [[code](https://www.crcv.ucf.edu/data/UCF101.php)]
   
-  Z-STAR
+  We introduce UCF101 which is currently the largest dataset of human actions. It consists of 101 action classes, over 13k clips and 27 hours of video data. The database consists of realistic user uploaded videos containing camera motion and cluttered background. Additionally, we provide baseline action recognition results on this new dataset using standard bag of words approach with overall performance of 44.5%. To the best of our knowledge, UCF101 is currently the most challenging dataset of actions due to its large number of classes, large number of clips and also unconstrained nature of such clips.
   
   <p align="center">
     <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
   </p>
 
-50. **** [[paper]()] [[code]()]
+54. **LAION-400M** [[paper](https://arxiv.org/pdf/2111.02114v1)] [[code](https://github.com/mlfoundations/open_clip)]
   
+  Multi-modal language-vision models trained on hundreds of millions of image-text pairs (e.g. CLIP, DALL-E) gained a recent surge, showing remarkable capability to perform zero- or few-shot learning and transfer even in absence of per-sample labels on target image data. Despite this trend, to date there has been no publicly available datasets of sufficient scale for training such models from scratch. To address this issue, in a community effort we build and release for public LAION-400M, a dataset with CLIP-filtered 400 million image-text pairs, their CLIP embeddings and kNN indices that allow efficient similarity search.
   
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
+  </p>
+
+55. **Kinetics** [[paper](https://arxiv.org/pdf/1705.06950v1)] [[code](https://github.com/google-deepmind/kinetics-i3d/tree/master)]
+  
+  We describe the DeepMind Kinetics human action video dataset. The dataset contains 400 human action classes, with at least 400 video clips for each action. Each clip lasts around 10s and is taken from a different YouTube video. The actions are human focussed and cover a broad range of classes including human-object interactions such as playing instruments, as well as human-human interactions such as shaking hands. We describe the statistics of the dataset, how it was collected, and give some baseline performance figures for neural network architectures trained and tested for human action classification on this dataset. We also carry out a preliminary analysis of whether imbalance in the dataset leads to bias in the classifiers.
   
   <p align="center">
     <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
   </p>
 
 
-52. **** [[paper]()] [[code]()]
-  
-  Z-STAR
-  
-  <p align="center">
-    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
-  </p>
 
-53. **** [[paper]()] [[code]()]
-  
-  Z-STAR
-  
-  <p align="center">
-    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
-  </p>
 
-54. **** [[paper]()] [[code]()]
-  
-  Z-STAR
-  
-  <p align="center">
-    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
-  </p>
 
-55. **** [[paper]()] [[code]()]
-  
-  Z-STAR
-  
-  <p align="center">
-    <img src="https://github.com/joeysbase/AI-for-HASS/edit/main/images/.png" width="600">
-  </p>
+
+
+
+
+
 
 56. **** [[paper]()] [[code]()]
   
