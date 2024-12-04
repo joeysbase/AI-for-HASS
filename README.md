@@ -7,7 +7,7 @@ This repo provides various resources regarding computational aesthetic and artis
   Aggregation structures with explicit information, such as image attributes and scene semantics, are effective and popular for intelligent systems for assessing aesthetics of visual data. However, useful information may not be available due to the high cost of manual annotation and expert design. In this paper, we present a novel multi-patch (MP) aggregation method for image aesthetic assessment. Different from state-of-the-art methods, which augment an MP aggregation network with various visual attributes, we train the model in an end-to-end manner with aesthetic labels only (i.e., aesthetically positive or negative). We achieve the goal by resorting to an attention-based mechanism that adaptively adjusts the weight of each patch during the training process to improve learning efficiency. In addition, we propose a set of objectives with three typical attention mechanisms (i.e., average, minimum, and adaptive) and evaluate their effectiveness on the Aesthetic Visual Analysis (AVA) benchmark. Numerical results show that our approach outperforms existing methods by a large margin. We further verify the effectiveness of the proposed attention-based objectives via ablation studies and shed light on the design of aesthetic assessment systems.
   
   <p align="center">
-    <img src="https://github.com/joeysbase/AI-for-HASS/tree/main/images/1.jpg">
+    <img src="https://github.com/joeysbase/AI-for-HASS/blob/main/images/1.jpg">
   </p>
 
 - **Exploring Video Quality Assessment on User Generated Contents from Aesthetic and Technical Perspectives** [[paper](https://arxiv.org/pdf/2211.04894v3)] [[code](https://github.com/vqassessment/dover)]
