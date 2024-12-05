@@ -175,9 +175,9 @@ This repo provides various resources regarding computational aesthetic and artis
     <img src="https://github.com/joeysbase/AI-for-HASS/blob/main/images/21.jpg" width="600">
   </p>
 
-- **SAN: INDUCING METRIZABILITY OF GAN WITH DISCRIMINATIVE NORMALIZED LINEAR LAYER** [[paper](https://arxiv.org/pdf/2301.12811v4)] [[code](https://github.com/sony/san)]
+- **Texture Networks: Feed-forward Synthesis of Textures and Stylized Images** [[paper](https://arxiv.org/pdf/1603.03417v1)] [[code](https://github.com/DmitryUlyanov/texture_nets)]
   
-  Generative adversarial networks (GANs) learn a target probability distribution by optimizing a generator and a discriminator with minimax objectives. This paper addresses the question of whether such optimization actually provides the generator with gradients that make its distribution close to the target distribution. We derive metrizable conditions, sufficient conditions for the discriminator to serve as the distance between the distributions, by connecting the GAN formulation with the concept of sliced optimal transport. Furthermore, by leveraging these theoretical results, we propose a novel GAN training scheme called the Slicing Adversarial Network (SAN). With only simple modifications, a broad class of existing GANs can be converted to SANs. Experiments on synthetic and image datasets support our theoretical results and the effectiveness of SAN as compared to the usual GANs. We also apply SAN to StyleGAN-XL, which leads to a state-of-the-art FID score amongst GANs for class conditional generation on CIFAR10 and ImageNet 256$times$256.
+  Gatys et al. recently demonstrated that deep networks can generate beautiful textures and stylized images from a single texture example. However, their methods requires a slow and memory-consuming optimization process. We propose here an alternative approach that moves the computational burden to a learning stage. Given a single example of a texture, our approach trains compact feed-forward convolutional networks to generate multiple samples of the same texture of arbitrary size and to transfer artistic style from a given image to any other image. The resulting networks are remarkably light-weight and can generate textures of quality comparable to Gatys~et~al., but hundreds of times faster. More generally, our approach highlights the power and flexibility of generative feed-forward models trained with complex and expressive loss functions.
   
   <p align="center">
     <img src="https://github.com/joeysbase/AI-for-HASS/blob/main/images/22.jpg" width="600">
@@ -306,6 +306,21 @@ outperform other state-of-the-art methods in generating photo-realistic images.
     <img src="https://github.com/joeysbase/AI-for-HASS/blob/main/images/31.jpg" width="600">
   </p>
 
+- **Preserving Color in Neural Artistic Style Transfer** [[paper](https://arxiv.org/pdf/1606.05897v1)] [[code](https://github.com/cysmith/neural-style-tf)]
+  
+  This note presents an extension to the neural artistic style transfer algorithm (Gatys et al.). The original algorithm transforms an image to have the style of another given image. For example, a photograph can be transformed to have the style of a famous painting. Here we address a potential shortcoming of the original method: the algorithm transfers the colors of the original painting, which can alter the appearance of the scene in undesirable ways. We describe simple linear methods for transferring style while preserving colors.
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/blob/main/images/57.jpg" width="600">
+  </p>
+
+- **Multi-style Generative Network for Real-time Transfer** [[paper](https://arxiv.org/pdf/1703.06953v2)] [[code](https://github.com/zhanghang1989/PyTorch-Multi-Style-Transfer)]
+  
+  Despite the rapid progress in style transfer, existing approaches using feed-forward generative network for multi-style or arbitrary-style transfer are usually compromised of image quality and model flexibility. We find it is fundamentally difficult to achieve comprehensive style modeling using 1-dimensional style embedding. Motivated by this, we introduce CoMatch Layer that learns to match the second order feature statistics with the target styles. With the CoMatch Layer, we build a Multi-style Generative Network (MSG-Net), which achieves real-time performance. We also employ an specific strategy of upsampled convolution which avoids checkerboard artifacts caused by fractionally-strided convolution. Our method has achieved superior image quality comparing to state-of-the-art approaches. The proposed MSG-Net as a general approach for real-time style transfer is compatible with most existing techniques including content-style interpolation, color-preserving, spatial control and brush stroke size control. MSG-Net is the first to achieve real-time brush-size control in a purely feed-forward manner for style transfer. Our implementations and pre-trained models for Torch, PyTorch and MXNet frameworks will be publicly available.
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/blob/main/images/58.jpg" width="600">
+  </p>
 ### Datasets
 - **FFHQ** [[paper](https://arxiv.org/pdf/1812.04948v3)] [[code](https://github.com/NVlabs/ffhq-dataset)]
   
@@ -339,6 +354,7 @@ outperform other state-of-the-art methods in generating photo-realistic images.
   <p align="center">
     <img src="https://github.com/joeysbase/AI-for-HASS/blob/main/images/35.jpg" width="600">
   </p>
+  
 ## Artistic Video Generation
 ### Papers&Codes
 - **Style-A-Video: Agile Diffusion for Arbitrary Text-based Video Style Transfer** [[paper](https://arxiv.org/pdf/2305.05464)] [[code](https://github.com/haha-lisa/Style-A-Video)]
@@ -471,7 +487,22 @@ outperform other state-of-the-art methods in generating photo-realistic images.
   <p align="center">
     <img src="https://github.com/joeysbase/AI-for-HASS/blob/main/images/51.jpg" width="600">
   </p>
-
+  
+- **CAP-VSTNet: Content Affinity Preserved Versatile Style Transfer** [[paper](https://arxiv.org/pdf/2303.17867v1)] [[code](https://github.com/linfengWen98/CAP-VSTNet)]
+  
+  Content affinity loss including feature and pixel affinity is a main problem which leads to artifacts in photorealistic and video style transfer. This paper proposes a new framework named CAP-VSTNet, which consists of a new reversible residual network and an unbiased linear transform module, for versatile style transfer. This reversible residual network can not only preserve content affinity but not introduce redundant information as traditional reversible networks, and hence facilitate better stylization. Empowered by Matting Laplacian training loss which can address the pixel affinity loss problem led by the linear transform, the proposed framework is applicable and effective on versatile style transfer. Extensive experiments show that CAP-VSTNet can produce better qualitative and quantitative results in comparison with the state-of-the-art methods.
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/blob/main/images/59.jpg" width="600">
+  </p>
+  - **WAIT: Feature Warping for Animation to Illustration video Translation using GANs** [[paper](https://arxiv.org/pdf/2310.04901v1)] [[code](https://github.com/giddyyupp/wait)]
+  
+  In this paper, we explore a new domain for video-to-video translation. Motivated by the availability of animation movies that are adopted from illustrated books for children, we aim to stylize these videos with the style of the original illustrations. Current state-of-the-art video-to-video translation models rely on having a video sequence or a single style image to stylize an input video. We introduce a new problem for video stylizing where an unordered set of images are used. This is a challenging task for two reasons: i) we do not have the advantage of temporal consistency as in video sequences; ii) it is more difficult to obtain consistent styles for video frames from a set of unordered images compared to using a single image. Most of the video-to-video translation methods are built on an image-to-image translation model, and integrate additional networks such as optical flow, or temporal predictors to capture temporal relations. These additional networks make the model training and inference complicated and slow down the process. To ensure temporal coherency in video-to-video style transfer, we propose a new generator network with feature warping layers which overcomes the limitations of the previous methods. We show the effectiveness of our method on three datasets both qualitatively and quantitatively. 
+  
+  <p align="center">
+    <img src="https://github.com/joeysbase/AI-for-HASS/blob/main/images/60.jpg" width="600">
+  </p>
+  
 ### Datasets
 - **ChronoMagic-Bench: A Benchmark for Metamorphic Evaluation of Text-to-Time-lapse Video Generation** [[paper](https://arxiv.org/pdf/2406.18522v2)] [[code](https://github.com/pku-yuangroup/chronomagic-bench)]
   
@@ -513,10 +544,6 @@ outperform other state-of-the-art methods in generating photo-realistic images.
   <p align="center">
     <img src="https://github.com/joeysbase/AI-for-HASS/blob/main/images/56.jpg" width="600">
   </p>
-
-
-
-
 
 
 
